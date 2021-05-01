@@ -1,0 +1,217 @@
+header {
+  background: url(../images/fondo.png),
+    linear-gradient(
+      328deg,
+      rgba(255, 61, 84, 1) 0%,
+      rgba(255, 143, 112, 1) 100%
+    );
+
+  background-position: center;
+  background-size: 1200px;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  height: auto;
+  border-bottom-left-radius: 80px;
+  padding: 50px 30px 150px;
+  margin-bottom: 50px;
+  @media (min-width: 766px) {
+    background-size: auto;
+  }
+}
+
+.header-container {
+  color: $white-text;
+}
+
+//NAV
+
+.logo-header {
+  width: 80%;
+}
+.navbar-collapse {
+  margin-top: 20px;
+  background-color: $white-text;
+  border-radius: 5px;
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 50px;
+  margin-left: -50%;
+  @media (min-width: 766px) {
+    margin-top: 0px;
+    background-color: transparent;
+    border-radius: 0px;
+    padding: 0px;
+    position: relative;
+    width: 80%;
+    left: 0px;
+    top: 0px;
+    margin-left: 0px;
+    align-items: baseline;
+  }
+
+  #navbarDropdown {
+    color: $body-copy;
+    margin: 0 auto;
+    justify-content: center;
+    display: table;
+    font-weight: 500;
+    font-family: $primary-font;
+    @media (min-width: 766px) {
+      color: $white-text;
+    }
+  }
+  .dropdown-menu {
+    margin: 15px auto;
+    justify-content: center;
+    flex-direction: column;
+    border: none;
+    background-color: $nav-background;
+    border-radius: 5px;
+  }
+  .dropdown-item {
+    text-align: center;
+    color: $body-copy;
+    font-family: $primary-font;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+  .dropdown-toggle::after {
+    display: none;
+  }
+  .arrow-icon {
+    margin-left: 3px;
+  }
+  hr {
+    border: 1px solid $nav-background;
+  }
+  .d-flex {
+    flex-direction: column;
+    @media (min-width: 766px) {
+      flex-direction: row;
+      align-items: baseline;
+    }
+    a {
+      color: $body-copy;
+      font-family: $primary-font;
+      font-size: 1.6rem;
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      text-decoration: none;
+      font-weight: 700;
+      @media (min-width: 766px) {
+        color: $white-text;
+        font-weight: 400;
+      }
+    }
+
+    .navbutton {
+      background-image: linear-gradient(
+        328deg,
+        rgba(255, 61, 84, 1) 0%,
+        rgba(255, 143, 112, 1) 100%
+      );
+      color: white;
+      text-align: center;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      @media (min-width: 766px) {
+        background-image: none;
+        background-color: $white-text;
+        border: 0px;
+        color: $cta-text;
+        width: 100%;
+        margin-left: 15px;
+        padding: 0px 20px;
+      }
+    }
+  }
+}
+//SECTION
+
+.header-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  @media (min-width: 426px) {
+    height: 140px;
+  }
+  h2 {
+    font-size: 3.1rem;
+    font-weight: 400;
+    letter-spacing: -0.07rem;
+    margin: 110px auto 20px;
+
+    @media (min-width: 426px) {
+      font-size: 3.5rem;
+      margin-bottom: 10px;
+      br {
+        display: none;
+      }
+    }
+    @media (min-width: 990px) {
+      font-size: 5rem;
+    }
+  }
+  p {
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 0;
+    @media (min-width: 426px) {
+      margin-bottom: 40px;
+      br {
+        display: none;
+      }
+    }
+  }
+}
+
+.contain-buttons-header-section {
+  display: flex;
+  margin: 1px auto;
+  display: flex;
+  justify-content: space-around;
+  width: 270px;
+  @media (min-width: 426px) {
+    width: 280px;
+  }
+}
+
+.buttons {
+  border: 1px solid $white-text;
+  border-radius: 30px;
+  height: 40px;
+  background-color: $white-text;
+  color: $cta-hover-background;
+  padding: 0px 15px;
+  display: flex;
+  align-items: center;
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.buttons:focus {
+  outline: none;
+}
+.buttons:hover {
+  background-color: $cta-text;
+  color: $white-text;
+}
+.line-button {
+  background-color: transparent;
+  color: $white-text;
+  cursor: pointer;
+}
+
+.line-button:hover {
+  background-color: $white-text;
+  color: $cta-hover-background;
+}
