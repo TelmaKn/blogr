@@ -1,44 +1,43 @@
 html {
-    font-size: 62.5%;
-    font-family: $primary-font;
-  }
-  
-  *,
-  ::before,
-  ::after {
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-color: $body-background;
-    box-sizing: border-box;
-    color: $body-copy;
-    font-size: 1.6rem;
-    height: 100%;
-    letter-spacing: 0.08rem;
-    margin: 0;
-    width: 100%;
-  }
-  
-  h1,
-  h2,
-  h4,
-  ul,
-  p {
-    margin: 0;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  img {
-    height: auto;
-  }
-  
-  
+  font-size: 62.5%;
+  font-family: $primary-font;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $body-background;
+  box-sizing: border-box;
+  color: $body-copy;
+  font-size: 1.6rem;
+  height: 100%;
+  letter-spacing: 0.08rem;
+  margin: 0;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+}
