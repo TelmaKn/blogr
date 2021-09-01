@@ -1,0 +1,218 @@
+////////////// MAIN ///////////////////
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  h4 {
+    color: $headings;
+    font-size: 2.7rem;
+    font-weight: 500;
+    letter-spacing: -0.1rem;
+    margin: 0px auto 40px;
+    padding: 0px 28px;
+  }
+  p {
+    font-weight: 300;
+    line-height: 2.5rem;
+    margin-bottom: 40px;
+    padding: 0px 28px;
+  }
+}
+
+///////////// PRIMARY SECTION /////////////
+
+.primary-main-section {
+  .primary-section-title {
+    @media (min-width: 576px) {
+      font-size: 3.1rem;
+      margin-bottom: -20px;
+      margin-top: 20px;
+    }
+
+    @media (min-width: 990px) {
+      font-size: 4rem;
+      margin-top: 70px;
+    }
+  }
+
+  .primary-section-row {
+    flex-direction: column-reverse;
+
+    @media (min-width: 576px) {
+      flex-direction: row;
+    }
+  }
+
+  .container-text-primary-section {
+    @media (min-width: 576px) {
+      align-self: center;
+
+      p {
+        margin-left: 20px;
+        text-align: start;
+      }
+    }
+  }
+  .primary-section-subtitle {
+    @media (min-width: 576px) {
+      display: flex;
+      font-size: 1.9rem;
+      margin-left: 20px;
+      margin-top: 70px;
+      text-align: start;
+      br {
+        display: none;
+      }
+    }
+
+    @media (min-width: 990px) {
+      font-size: 2.8rem;
+    }
+  }
+
+  .container-img-primary-section {
+    align-items: center;
+    display: flex;
+    overflow-x: hidden;
+  }
+
+  .design-img-body-mb {
+    margin: 0 auto 40px;
+    width: 100%;
+
+    @media (min-width: 576px) {
+      display: none;
+    }
+  }
+
+  .design-img-body-dk {
+    display: none;
+
+    @media (min-width: 576px) {
+      align-items: center;
+      display: flex;
+      width: 700px;
+    }
+    @media (min-width: 990px) {
+      margin-left: 150px;
+    }
+  }
+}
+
+//////////////// SECONDARY SECTION /////////////////
+
+.secondary-main-section {
+  background-blend-mode: screen;
+  background-color: hsl(237, 23%, 32%);
+  background-image: url(../images/bg-pattern-circles.svg);
+  background-position-y: -200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 500px;
+  border-bottom-left-radius: 80px;
+  border-top-right-radius: 80px;
+  color: $white-text;
+  margin-top: 200px;
+  padding-bottom: 30px;
+
+  @media (min-width: 576px) {
+    padding-bottom: 0px;
+    margin-top: 130px;
+    height: 270px;
+  }
+
+  @media (min-width: 990px) {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  .container-text-secondary-section {
+    align-self: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    @media (min-width: 576px) {
+      align-items: center;
+      align-self: auto;
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
+    @media (min-width: 990px) {
+      padding-top: 60px;
+    }
+  }
+
+  h3 {
+    font-size: 3.1rem;
+    font-weight: 400;
+    letter-spacing: -0.07rem;
+    margin: 0px auto 20px;
+    padding: 0 28px;
+
+    @media (min-width: 576px) {
+      display: flex;
+      font-size: 2.9rem;
+      text-align: start;
+      br {
+        display: none;
+      }
+    }
+  }
+  p {
+    margin-bottom: 50px;
+
+    @media (min-width: 576px) {
+      margin-bottom: 0px;
+      text-align: start;
+    }
+  }
+
+  .container-img-secondary-section {
+    display: flex;
+    justify-content: center;
+  }
+  .phones-img-body {
+    margin-top: -170px;
+    width: 370px;
+
+    @media (min-width: 576px) {
+      margin-top: -50px;
+    }
+  }
+}
+
+///////////////// THIRD SECTION ////////////////////
+
+.third-main-section {
+  margin: 0auto;
+  .container-img-third-section {
+    @media (min-width: 576px) {
+      align-items: center;
+      display: flex;
+    }
+  }
+  .laptop-img-body {
+    margin-top: 50px;
+    margin: 0 auto 40px;
+    width: 100%;
+    @media (min-width: 576px) {
+      height: 600px;
+      margin-left: -450px;
+      width: auto;
+    }
+    @media (min-width: 990px) {
+      margin-left: -200px;
+      width: 900px;
+    }
+  }
+
+  @media (min-width: 576px) {
+    .container-text-third-section {
+      align-self: center;
+      padding-top: 40px;
+      text-align: start;
+    }
+  }
+}

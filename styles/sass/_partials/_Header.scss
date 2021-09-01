@@ -29,53 +29,50 @@ header {
   width: 80%;
 }
 .navbar-collapse {
-  margin-top: 20px;
   background-color: $white-text;
   border-radius: 5px;
+  left: 50%;
+  margin-left: -50%;
+  margin-top: 20px;
   padding: 20px;
   position: absolute;
-  width: 100%;
-  left: 50%;
   top: 50px;
-  margin-left: -50%;
+  width: 100%;
   @media (min-width: 766px) {
-    margin-top: 0px;
+    align-items: baseline;
     background-color: transparent;
     border-radius: 0px;
+    left: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
     padding: 0px;
     position: relative;
-    width: 80%;
-    left: 0px;
     top: 0px;
-    margin-left: 0px;
-    align-items: baseline;
+    width: 80%;
   }
 
   #navbarDropdown {
     color: $body-copy;
-    margin: 0 auto;
-    justify-content: center;
     display: table;
     font-weight: 500;
-    font-family: $primary-font;
+    justify-content: center;
+    margin: 0 auto;
     @media (min-width: 766px) {
       color: $white-text;
     }
   }
   .dropdown-menu {
-    margin: 15px auto;
-    justify-content: center;
-    flex-direction: column;
-    border: none;
     background-color: $nav-background;
     border-radius: 5px;
+    border: none;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px auto;
   }
   .dropdown-item {
-    text-align: center;
     color: $body-copy;
-    font-family: $primary-font;
-    font-size: 1.6rem;
     margin-bottom: 10px;
+    text-align: center;
   }
   .dropdown-toggle::after {
     display: none;
@@ -89,18 +86,14 @@ header {
   .d-flex {
     flex-direction: column;
     @media (min-width: 766px) {
-      flex-direction: row;
       align-items: baseline;
+      flex-direction: row;
     }
     a {
-      color: $body-copy;
-      font-family: $primary-font;
-      font-size: 1.6rem;
-      text-align: center;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      text-decoration: none;
       font-weight: 700;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      text-align: center;
       @media (min-width: 766px) {
         color: $white-text;
         font-weight: 400;
@@ -114,19 +107,19 @@ header {
         rgba(255, 143, 112, 1) 100%
       );
       color: white;
-      text-align: center;
-      width: 50%;
       display: flex;
       justify-content: center;
       margin: 0 auto;
+      text-align: center;
+      width: 50%;
       @media (min-width: 766px) {
-        background-image: none;
         background-color: $white-text;
+        background-image: none;
         border: 0px;
         color: $cta-text;
-        width: 100%;
         margin-left: 15px;
         padding: 0px 20px;
+        width: 100%;
       }
     }
   }
@@ -174,9 +167,8 @@ header {
 
 .contain-buttons-header-section {
   display: flex;
-  margin: 1px auto;
-  display: flex;
   justify-content: space-around;
+  margin: 1px auto;
   width: 270px;
   @media (min-width: 426px) {
     width: 280px;
@@ -184,18 +176,18 @@ header {
 }
 
 .buttons {
-  border: 1px solid $white-text;
-  border-radius: 30px;
-  height: 40px;
-  background-color: $white-text;
-  color: $cta-hover-background;
-  padding: 0px 15px;
-  display: flex;
   align-items: center;
-  font-family: $primary-font;
-  font-weight: 700;
-  font-size: 1.6rem;
+  background-color: $white-text;
+  border-radius: 30px;
+  border: 1px solid $white-text;
+  color: $cta-hover-background;
   cursor: pointer;
+  display: flex;
+  font-family: $primary-font;
+  font-size: 1.6rem;
+  font-weight: 700;
+  height: 40px;
+  padding: 0px 15px;
 }
 
 .buttons:focus {

@@ -1,204 +1,44 @@
 html {
-  font-family: $primary-font;
-  font-size: 62.5%;
-}
-body {
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  font-size: 1.6rem;
-  background-color: $body-background;
-  color: $body-copy;
-}
-
-//MAIN
-
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 auto;
-  text-align: center;
-  h4 {
-    color: $headings;
-    margin: 0px auto 40px;
-    font-weight: 500;
-    font-size: 2.7rem;
-    letter-spacing: -0.1rem;
-    padding: 0px 28px;
-    @media (min-width: 426px) {
-      //
-    }
+    font-size: 62.5%;
+    font-family: $primary-font;
   }
+  
+  *,
+  ::before,
+  ::after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: $body-background;
+    box-sizing: border-box;
+    color: $body-copy;
+    font-size: 1.6rem;
+    height: 100%;
+    letter-spacing: 0.08rem;
+    margin: 0;
+    width: 100%;
+  }
+  
+  h1,
+  h2,
+  h4,
+  ul,
   p {
     margin: 0;
-    margin-bottom: 40px;
-    padding: 0px 28px;
-    font-weight: 300;
-    line-height: 2.5rem;
   }
-}
-
-//PRIMARY SECTION
-
-.primary-main-section {
-  .primary-section-row {
-    flex-direction: column-reverse;
-    @media (min-width: 426px) {
-      flex-direction: row;
-    }
+  
+  ul {
+    list-style: none;
+    padding: 0;
   }
-  .container-img-primary-section {
-    overflow-x: hidden;
+  
+  a {
+    text-decoration: none;
   }
-  .design-img-body-mb {
-    width: 100%;
-    margin: 0 auto 40px;
-    @media (min-width: 426px) {
-      display: none;
-    }
+  
+  img {
+    height: auto;
   }
-  .design-img-body-dk {
-    display: none;
-    @media (min-width: 426px) {
-      display: flex;
-      width: 700px;
-      align-items: center;
-    }
-    @media (min-width: 990px) {
-      margin-left: 150px;
-    }
-  }
-
-  @media (min-width: 426px) {
-    p {
-      text-align: start;
-      margin-left: 20px;
-    }
-    .container-text-primary-section {
-      align-self: center;
-    }
-    .primary-section-title {
-      margin-top: 20px;
-      margin-bottom: -20px;
-      font-size: 3.1rem;
-    }
-    .primary-section-subtitle {
-      font-size: 1.9rem;
-      margin-left: 20px;
-      display: flex;
-      text-align: start;
-      br {
-        display: none;
-      }
-    }
-  }
-  @media (min-width: 990px) {
-    .primary-section-title {
-      font-size: 4rem;
-      margin-top: 70px;
-    }
-    .primary-section-subtitle {
-      font-size: 2.8rem;
-    }
-  }
-}
-
-//SECONDARY SECTION
-
-.secondary-main-section {
-  background-color: hsl(237, 23%, 32%);
-  color: $white-text;
-  background-image: url(../images/bg-pattern-circles.svg);
-  background-blend-mode: screen;
-  background-size: 500px;
-  background-position: center;
-  background-position-y: -200px;
-  background-repeat: no-repeat;
-  border-top-right-radius: 80px;
-  margin-top: 200px;
-  padding-bottom: 30px;
-  border-bottom-left-radius: 80px;
-  @media (min-width: 426px) {
-    padding-bottom: 0px;
-    margin-top: 130px;
-    height: 270px;
-  }
-  @media (min-width: 990px) {
-    margin-top: 80px;
-    margin-bottom: 80px;
-  }
-
-  .container-text-secondary-section {
-    align-self: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    @media (min-width: 426px) {
-      align-items: center;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      align-self: auto;
-    }
-    @media (min-width: 990px) {
-      padding-top: 60px;
-    }
-  }
-
-  h3 {
-    font-size: 3.1rem;
-    font-weight: 400;
-    letter-spacing: -0.07rem;
-    margin: 0px auto 20px;
-    padding: 0 28px;
-    @media (min-width: 426px) {
-      font-size: 2.9rem;
-      display: flex;
-      text-align: start;
-      br {
-        display: none;
-      }
-    }
-  }
-  p {
-    margin: 0;
-    margin-bottom: 50px;
-    @media (min-width: 426px) {
-      text-align: start;
-      margin-bottom: 0px;
-    }
-  }
-  .phones-img-body {
-    width: 100%;
-    margin-top: -170px;
-    @media (min-width: 426px) {
-      margin-top: -50px;
-      width: 370px;
-    }
-  }
-}
-
-//THIRD SECTION
-
-.third-main-section {
-  .laptop-img-body {
-    width: 100%;
-    margin: 0 auto 40px;
-    margin-top: 50px;
-    @media (min-width: 426px) {
-      margin-left: -300px;
-    }
-    @media (min-width: 990px) {
-      margin-left: -200px;
-      width: 900px;
-    }
-  }
-
-  @media (min-width: 426px) {
-    .container-text-third-section {
-      text-align: start;
-      align-self: center;
-      padding-top: 40px;
-    }
-  }
-}
+  
+  
